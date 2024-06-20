@@ -29,9 +29,9 @@ library(MosqMK)
 
 ## Usage 使用
 
-（1）数据整理模块
+(1) 数据整理模块
 
-1）函数MK_Data_Collect
+1) 函数MK_Data_Collect
 
 可以批量汇总指定文件夹下的MK300原始导出数据
 
@@ -43,34 +43,43 @@ library(MosqMK)
 
 ```
 all_data <- MK_Data_Collect("Demo","1223700001264")
-
 ```
 
 汇总后得到的all_data我们预览如下
 
 <img src="www/clean_data.png" width="100%" style="display: block; margin: auto;" />
 
-2）函数MK_Data_Filter
+2) MK_Data_Filter
 
 MK300原始数据中可能存在个别观测时间点有异常数据过大的情况，MosqMK包建议以每小时收集15只蚊虫为限进行数据筛选
 
 使用函数MK_Data_Filter，第一个参数为纳入的数据，第二个参数为筛选限制
 
-
 ```
 clean_data <- MK_Data_Filter(all_data,15)
-
 ```
 
 (2)数据可视化模块
 
-MK_Plot_Raw
+1) MK_Plot_Raw
+
+2) MK_Plot_Factor
+
+```
+MK_Plot_Month(clean_data)
+```
+<img src="www/MK_Plot_Factor.png" width="100%" style="display: block; margin: auto;" />
+
+3) MK_Plot_Week
 
 
-MK_Plot_Week
+4) MK_Plot_Month
 
+```
+MK_Plot_Month(clean_data)
+```
 
-MK_Plot_Month
+<img src="www/MK_Plot_Month.png" width="100%" style="display: block; margin: auto;" />
 
 (3)数据报告模块
 

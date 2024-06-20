@@ -6,7 +6,7 @@
   library(cowplot)
 ###############################################################################
 #function
-  MK_Panel_Month <- function(Data){
+  MK_Plot_Month <- function(Data){
     PanelTheme <-
     theme(panel.background = element_blank(),
           axis.line = element_line(linewidth=0.25),

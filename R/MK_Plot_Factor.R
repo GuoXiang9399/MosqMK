@@ -6,7 +6,7 @@
   library(cowplot)
 ###############################################################################
 #function
-  MK_Factor <- function(Data){
+  MK_Plot_Factor <- function(Data){
      DataFactor <- subset(Data, Number>0)
     PanelTheme <-
       theme(panel.background = element_blank(),
