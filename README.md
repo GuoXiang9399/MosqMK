@@ -1,7 +1,9 @@
 # MosqMK
-A R package for analyzing unprocessed data collected by mosquito density monitoring instrument MK 300.
+MosqMK是针对由南方医科大学开发的智能化蚊媒监测仪器MK300及相关产品等开发的集数据整理、数据可视化和数据报告工作流为一体的R包
 
-MosqMK是针对由南方医科大学开发的智能化蚊媒监测仪器MK300及相关产品等开发的集“数据整理”模块、“数据可视化”模块和“数据报告”模块工作流为一体的R包
+MK300的设计与应用详见论文Lai Z, Wu J, Xiao X, Xie L, Liu T, Zhou J, et al. (2022) Development and evaluation of an efficient and real-time monitoring system for the vector mosquitoes, Aedes albopictus and Culex quinquefasciatus. PLoS Negl Trop Dis 16(9):e0010701. https://doi.org/10.1371/journal.pntd.0010701
+
+MK300仪器数据下载可通过 https://www.smu.edu.cn/rdyjs/index.htm 或 http://app.moqong.com/admin/login.jhtml
 
 ## Installation 安装
 
