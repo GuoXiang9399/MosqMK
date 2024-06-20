@@ -10,9 +10,9 @@
   #all_data <- MK_Data_Collect("Demo","00054F820441223700001264")
 ###############################################################################
 #function
+  mk_read_excel <- function(x){read_excel(x,skip=1)}
   MK_Data_Collect <- function(i,j){
     file_list <- fs::dir_ls(path=i)
-    mk_read_excel <- function(x){read_excel(x,skip=1)}
     data_list <- lapply(file_list, mk_read_excel)
     all_data <- do.call(rbind, data_list)
      names(all_data) <- c("No","Time","Number","Temperature","Humidity","Illuminance","Battery")

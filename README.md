@@ -48,6 +48,8 @@ all_data <- MK_Data_Collect("Demo","1223700001264")
 
 汇总后得到的all_data我们预览如下
 
+<img src="www/clean_data.png" width="100%" style="display: block; margin: auto;" />
+
 2）函数MK_Data_Filter
 
 MK300原始数据中可能存在个别观测时间点有异常数据过大的情况，MosqMK包建议以每小时收集15只蚊虫为限进行数据筛选
