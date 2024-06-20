@@ -63,15 +63,25 @@ clean_data <- MK_Data_Filter(all_data,15)
 
 1) MK_Plot_Raw
 
+```
+MK_Plot_Raw(clean_data)
+```
+
+<img src="www/MK_Plot_Raw.png" width="100%" style="display: block; margin: auto;" />
+
 2) MK_Plot_Factor
 
 ```
-MK_Plot_Month(clean_data)
+MK_Plot_Factor(clean_data)
 ```
 <img src="www/MK_Plot_Factor.png" width="100%" style="display: block; margin: auto;" />
 
 3) MK_Plot_Week
+```
+MK_Plot_Week(clean_data)
+```
 
+#<img src="www/MK_Plot_Week.png" width="100%" style="display: block; margin: auto;" />
 
 4) MK_Plot_Month
 
@@ -81,8 +91,8 @@ MK_Plot_Month(clean_data)
 
 <img src="www/MK_Plot_Month.png" width="100%" style="display: block; margin: auto;" />
 
-(3)数据报告模块
 
+## Usage 使用 -- 数据报告模块
 
 开放中...
 
