@@ -5,31 +5,31 @@ MosqMK是针对由南方医科大学开发的智能化蚊媒监测仪器MK300及
 
 ## Installation 安装
 
-
-MosqMK依赖的R包如下： readxl, tidyr, dplyr, ggplot2, cowplot
-
-安装MosqMK包流程参考如下
+安装MosqMK包可通过devtools工具，流程参考如下：
 
 ```
 library(devtools)
 install_github('GuoXiang9399/MosqMK')
 ```
 
+MosqMK依赖的R包包括readxl, fs, lubridate, tidyr, dplyr, ggplot2, cowplot
+
+加载MosqMK包和依赖的R包如下：
 
 ```
 library(readxl)
+library(fs)
 library(lubridate)
 library(tidyr)
 library(dplyr)
-library(fs)
+library(ggplot2)
+library(cowplot)
 library(MosqMK)
 ```  
 
 
 
-## Usage 使用
-
-(1) 数据整理模块
+## Usage 使用 -- 数据整理模块
 
 1) 函数MK_Data_Collect
 
@@ -59,7 +59,7 @@ MK300原始数据中可能存在个别观测时间点有异常数据过大的情
 clean_data <- MK_Data_Filter(all_data,15)
 ```
 
-(2)数据可视化模块
+## Usage 使用 -- 数据可视化模块
 
 1) MK_Plot_Raw
 
