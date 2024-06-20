@@ -11,7 +11,7 @@
 ###############################################################################
 #function
   MK_Data_Collect <- function(i,j){
-    file_list <- dir_ls(path=i)
+    file_list <- fs::dir_ls(path=i)
     mk_read_excel <- function(x){read_excel(x,skip=1)}
     data_list <- lapply(file_list, mk_read_excel)
     all_data <- do.call(rbind, data_list)
@@ -22,7 +22,7 @@
     all_data$ID <- j
     all_data$char <- ":00"
     all_data <- unite(all_data,Time,char,col="Time",sep="")
-    all_data$Time <- as_datetime(all_data$Time)
+    all_data$Time <- lubridate::as_datetime(all_data$Time)
     all_data$Number <- as.numeric(all_data$Number)
     all_data$Temperature <- as.numeric(all_data$Temperature)
     all_data$Humidity <- as.numeric(all_data$Humidity)

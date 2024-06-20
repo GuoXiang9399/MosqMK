@@ -6,11 +6,8 @@
   library(cowplot)
 ###############################################################################
 #function
-
-  library(ggplot2)
-  library(cowplot)
-
-  PanelTheme <- theme(panel.background = element_rect(fill = "#F5FAFB"),
+  MK_Raw_Script <- function(Data){
+      PanelTheme <- theme(panel.background = element_rect(fill = "#F5FAFB"),
         panel.grid.major.x = element_line(color = "gray60",linetype = "dashed"),
         axis.ticks.x = element_blank(),
         axis.ticks.y = element_line(size=0.5),
@@ -52,6 +49,10 @@
     theme()
   plot_grid(p1,p2,p3,p4,
             ncol=1,align="h")
+
+  }
+
+
 
 
 

@@ -13,8 +13,19 @@ MosqMK依赖的R包如下： readxl, tidyr, dplyr, ggplot2, cowplot
 ```
 library(devtools)
 install_github('GuoXiang9399/MosqMK')
-library(MosqMK)
 ```
+
+
+```
+library(readxl)
+library(lubridate)
+library(tidyr)
+library(dplyr)
+library(fs)
+library(MosqMK)
+```  
+
+
 
 ## Usage 使用
 

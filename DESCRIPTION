@@ -1,16 +1,20 @@
 Package: MosqMK
 Type: Package
-Title: A R package for analyzing unprocessed data collected by mosquito density monitoring instrument MK 300
+Title: A R package for analyzing unprocessed data collected by mosquito density monitoring instrument MK 300 
 Version: 0.1.0
-Author: c(person("Guo", "Xiang", email = "guoxiang199399@163.com",
+Author: Xiang Guo
+Authors@R: c(person("Guo", "Xiang", email = "guoxiang199399@163.com",
                     role = c("aut", "cre")))
-Maintainer: c(person("Guo", "Xiang", email = "guoxiang199399@163.com",
-                    role = c("aut", "cre")))
+Maintainer: The package maintainer <guoxiang199399@163.com>
 Description: A R package for analyzing unprocessed data collected by mosquito density monitoring instrument MK 300
-License: MIT License
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+Roxygen: list(markdown = TRUE)
+URL: https://www.smu.edu.cn/rdyjs
 Depends:
   R (>= 3.1)
 Imports:
-  readxl, tidyr, dplyr, ggplot, cowplot
+  readxl, tidyr, dplyr, ggplot2, cowplot, fs, lubridate

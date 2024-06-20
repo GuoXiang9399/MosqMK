@@ -1,7 +1,13 @@
+###############################################################################
+###############################################################################
+###############################################################################
+#library
   library(ggplot2)
   library(cowplot)
-
-  PanelTheme <- theme(panel.background = element_rect(fill = "#F5FAFB"),
+###############################################################################
+#function
+  MK_Plot_Raw <- function(Data){
+      PanelTheme <- theme(panel.background = element_rect(fill = "#F5FAFB"),
         panel.grid.major.x = element_line(color = "gray60",linetype = "dashed"),
         axis.ticks.x = element_blank(),
         axis.ticks.y = element_line(size=0.5),
@@ -44,4 +50,6 @@
   plot_grid(p1,p2,p3,p4,
             ncol=1,align="h")
 
+
+  }
 
