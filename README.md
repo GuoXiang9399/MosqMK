@@ -61,6 +61,16 @@ MS-300原始数据中可能存在个别观测时间点有异常数据过大的�
 clean_data <- MK_Data_Filter(all_data,15)
 ```
 
+3) MK_Data_Index
+
+通过计算可获得与ADI等值的Index
+
+```
+data——index <- MK_Data_Index(all_data)
+```
+
+<img src="www/MK_Data_Index.png" width="100%" style="display: block; margin: auto;" />
+
 ## Usage 使用 -- 数据可视化模块
 
 1) MK_Plot_Raw
