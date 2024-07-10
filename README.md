@@ -1,9 +1,9 @@
 # MosqMK
-MosqMK是针对由南方医科大学开发的智能化蚊媒监测仪器MK300及相关产品等开发的集数据整理、数据可视化和数据报告工作流为一体的R包
+MosqMK是针对由南方医科大学开发的智能化蚊媒监测仪器MS-300及相关产品等开发的集数据整理、数据可视化和数据报告工作流为一体的R包
 
-MK300的设计与应用详见论文Lai Z, Wu J, Xiao X, Xie L, Liu T, Zhou J, et al. (2022) Development and evaluation of an efficient and real-time monitoring system for the vector mosquitoes, Aedes albopictus and Culex quinquefasciatus. PLoS Negl Trop Dis 16(9):e0010701. https://doi.org/10.1371/journal.pntd.0010701
+MS-300的设计与应用详见论文Lai Z, Wu J, Xiao X, Xie L, Liu T, Zhou J, et al. (2022) Development and evaluation of an efficient and real-time monitoring system for the vector mosquitoes, Aedes albopictus and Culex quinquefasciatus. PLoS Negl Trop Dis 16(9):e0010701. https://doi.org/10.1371/journal.pntd.0010701
 
-MK300仪器数据下载可通过 https://www.smu.edu.cn/rdyjs/index.htm 或 http://app.moqong.com/admin/login.jhtml
+MS-300仪器数据下载可通过 https://www.smu.edu.cn/rdyjs/index.htm 或 http://app.moqong.com/admin/login.jhtml
 
 ## Installation 安装
 
@@ -35,7 +35,7 @@ library(MosqMK)
 
 1) 函数MK_Data_Collect
 
-可以批量汇总指定文件夹下的MK300原始导出数据
+可以批量汇总指定文件夹下的MS-300原始导出数据
 
 如下图demo文件夹下的多个原始数据文件
 
@@ -53,7 +53,7 @@ all_data <- MK_Data_Collect("Demo","1223700001264")
 
 2) MK_Data_Filter
 
-MK300原始数据中可能存在个别观测时间点有异常数据过大的情况，MosqMK包建议以每小时收集15只蚊虫为限进行数据筛选
+MS-300原始数据中可能存在个别观测时间点有异常数据过大的情况，MosqMK包建议以每小时收集15只蚊虫为限进行数据筛选
 
 使用函数MK_Data_Filter，第一个参数为纳入的数据，第二个参数为筛选限制
 
